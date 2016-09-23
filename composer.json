@@ -1,0 +1,21 @@
+{
+    "name": "SimplePhp",
+    "description": "A simple php project without frameworks",
+    "keywords": ["php"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jose Adame",
+            "email": "joseadamefernandez@gmail.com",
+            "role": "Creator / Main Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Example\\": "src/"
+        }
+    }
+}
