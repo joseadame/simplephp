@@ -37,11 +37,14 @@ $routeDefinitionCallback = function (\FastRoute\RouteCollector $r) {
     foreach ($routes as $route) {
         $r->addRoute($route[0], $route[1], $route[2]);
     }
+
 };
 
 $dispatcher = \FastRoute\simpleDispatcher($routeDefinitionCallback);
 
 $routeInfo = $dispatcher->dispatch($request->getMethod(), $request->getPath());
+
+var_dump($routeInfo);
 
 switch ($routeInfo[0]) {
     case \FastRoute\Dispatcher::NOT_FOUND:

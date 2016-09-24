@@ -1,5 +1,6 @@
 <?php
 
 return [
-    ['GET', '/public/', ['Example\Controllers\Homepage', 'showAction']],
+    ['GET', '/', ['Example\Controllers\Homepage', 'showAction']],
+    ['GET', '/users', ['Example\Controllers\Page', 'show']]
 ];
